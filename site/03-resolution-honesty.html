@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resolution Honesty: 600 dpi vs. 300 dpi &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html" class="active">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Resolution Honesty: 600 dpi vs. 300 dpi</h1>
+<p>Scan resolution marketing is a swamp of big numbers. This chapter tells you what dpi actually measures, what each common setting really delivers, and which one to use — with no overselling.</p>
+<h2>What dpi actually is</h2>
+<p><strong>DPI = dots per inch.</strong> A 600 dpi scan samples 600 pixels across every inch of the original. A 4×6 print scanned at 600 dpi becomes a 2400 × 3600 pixel file. At 300 dpi, the same print becomes 1200 × 1800 pixels.</p>
+<p>The key insight: <strong>the dpi you need depends on the size you&#x27;ll ever want to view or print the image at, and on how much detail the original contains.</strong> Bigger numbers are not automatically better — beyond the original&#x27;s actual detail, extra dpi just makes a bigger file of the same picture.</p>
+<h2>The honest table</h2>
+<table><thead><tr><th>Original</th><th>300 dpi gives you</th><th>600 dpi gives you</th><th>Honest verdict</th></tr></thead><tbody><tr><td>3×5 print</td><td>1500 × 1050 px (good 3×5 reprint)</td><td>3000 × 2100 px (good 6×10 reprint)</td><td>300 is fine for reprinting same-size; 600 buys enlargement headroom</td></tr><tr><td>4×6 print</td><td>1800 × 1200 px</td><td>3600 × 2400 px</td><td>300 is fine for same-size; 600 if it&#x27;s a favorite worth reprinting larger</td></tr><tr><td>5×7 print</td><td>2100 × 1500 px</td><td>4200 × 3000 px</td><td>300 is plenty for nearly everyone</td></tr><tr><td>8×10 print</td><td>2400 × 3000 px</td><td>4800 × 6000 px</td><td>300 is plenty; 600 files get huge</td></tr><tr><td>35mm slide</td><td>~1050 × 1500 px</td><td>~2100 × 3000 px</td><td><strong>600 minimum.</strong> Slides are tiny; you&#x27;re enlarging 35mm frames to print size, so more dpi is genuinely useful</td></tr><tr><td>35mm negative</td><td>same as slide</td><td>same as slide</td><td><strong>600 minimum</strong>, same reason</td></tr></tbody></table>
+<h2>The three honest rules</h2>
+<h3>Rule 1: For ordinary prints, 300 dpi is honest quality</h3>
+<p>A standard photo print holds roughly 200–300 real lines of detail per inch. Scanning at 300 dpi captures essentially all of it. Claiming a 4×6 print &quot;needs&quot; 1200 dpi is marketing: the extra data is interpolation or empty magnification.</p>
+<p><strong>Use 300 dpi when:</strong> the original is 5×7 or larger, or you only ever expect to view on screens and reprint at the same size.</p>
+<h3>Rule 2: For small originals you may enlarge, 600 dpi is honest quality</h3>
+<p>Small originals (3×5 and smaller) and all film benefit from 600 dpi because the <em>enlargement factor</em> is higher. A 35mm slide is 24×36 mm — to make a 4×6 print from it, the scanner must stretch every film millimeter across half an inch of paper. More sampling at the scan stage is real information here, not padding.</p>
+<p><strong>Use 600 dpi when:</strong> originals are small prints you might reprint larger, all slides, all negative strips, and any photo you&#x27;d call a family treasure.</p>
+<h3>Rule 3: Above 600 dpi, returns collapse</h3>
+<p>Scanner makers advertise 1200, 2400, even 6400 dpi. For reflective prints, beyond 600 dpi you are mostly scanning the texture of the paper&#x27;s fibers. For 35mm film, 2400–3200 dpi captures nearly everything the film itself recorded; beyond that you hit the film&#x27;s own grain structure. These settings multiply file size and scan time while adding detail you can&#x27;t see at normal viewing.</p>
+<p><strong>Use higher than 600 dpi only when:</strong> you have a specific large-print reproduction project from small film, and you&#x27;ve tested that your scanner&#x27;s optics (not interpolation) actually deliver it.</p>
+<h2>File size reality check</h2>
+<p>Approximate uncompressed sizes for a 4×6 print:</p>
+<ul><li>300 dpi TIFF: ~6 MB</li><li>600 dpi TIFF: ~25 MB</li><li>1200 dpi TIFF: ~100 MB</li></ul>
+<p>A 200-photo shoebox at 600 dpi TIFF is roughly <strong>5 GB</strong>. At 300 dpi it&#x27;s 1.2 GB. Both are manageable — but only if you planned for it (chapter 6). Scanning everything at 1200 dpi &quot;just in case&quot; turns a weekend project into a hard-drive problem for no visible benefit.</p>
+<h2>Format: TIFF for masters, JPEG for sharing</h2>
+<ul><li><strong>Scan to TIFF</strong> (lossless) for your master archive. Every future edit starts from the best file you have.</li><li><strong>Export JPEG</strong> (quality 85–90) copies for sharing with relatives and for the keepsake book in chapter 8.</li></ul>
+<p>Keep the two apart in your folder tree (chapter 5) so a shared JPEG never replaces the master TIFF.</p>
+<h2>The one-line honesty test</h2>
+<blockquote><p>If you can&#x27;t name the print size you&#x27;d need the extra resolution for, you don&#x27;t need the extra resolution.</p></blockquote>
+<p>Next: give those files names that outlive you — <a href="04-file-naming.html">chapter 4</a>.</p>
+<div class="pager"><a href="02-lighting-setups.html">&larr; Previous</a><a href="04-file-naming.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

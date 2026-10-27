@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start Here &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html" class="active">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Start Here</h1>
+<p><strong>Photo Digitizing Guide</strong> — a plain-English manual for rescuing your family&#x27;s printed photos, slides, and film negatives into a safe digital archive.</p>
+<p>If you have a shoebox of old prints, a carousel of slides, or strips of negatives in an envelope marked &quot;Christmas 1987,&quot; this guide is for you. No cloud accounts, no subscriptions, no special expertise required — just a phone, a flatbed scanner (if you have one), and a weekend or two.</p>
+<h2>What this guide covers</h2>
+<ol><li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a> — which tool for which job, and when it doesn&#x27;t matter.</li><li><a href="02-lighting-setups.html">Lighting Setups</a> — cheap, repeatable lighting that makes phone scans look professional.</li><li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a> — what those numbers actually buy you, and when &quot;good enough&quot; really is.</li><li><a href="04-file-naming.html">File Naming: Years and Events</a> — names your grandchildren will understand.</li><li><a href="05-folder-trees.html">Folder Trees</a> — a simple structure that scales to thousands of photos.</li><li><a href="06-backup-two-places.html">Backup to Two Places</a> — the 3-2-1 rule, adapted for real households.</li><li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a> — getting copies to siblings and cousins without the cloud.</li><li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a> — turning the archive back into something you can hold.</li><li><a href="09-scanner-worksheets.html">Scanner Worksheets</a> — printable checklists and batch logs.</li><li><a href="10-glossary.html">Glossary</a> — every term used in this guide, defined once.</li></ol>
+<h2>How to use this guide</h2>
+<ul><li><strong>Have one weekend and a phone?</strong> Read chapters 1–3, then 4–6. You&#x27;ll have a working archive.</li><li><strong>Have a flatbed scanner?</strong> Chapters 1 and 3 tell you when it earns its desk space.</li><li><strong>Have a relative waiting for photos?</strong> Skim 4–5, then jump to 7 (sharing) and 8 (keepsakes).</li></ul>
+<h2>The one rule that matters most</h2>
+<p><strong>Every photo should exist in at least two physical places before you call it &quot;saved.&quot;</strong> A scan on your laptop is not an archive — it&#x27;s a single copy of something irreplaceable. Chapter 6 makes this painless.</p>
+<h2>Companion guides</h2>
+<p>This guide covers <em>analog</em> photos going <em>into</em> your digital archive. For what happens after — organizing the thousands of digital photos you already have — see the companion <strong>Photo Library Comfort Guide</strong>. For the backup hardware and habits in more depth, see the <strong>Backup Basics Handbook</strong>.</p>
+<hr>
+<p><em>Photo Digitizing Guide is maintained by Asdale Dynamics, LLC. It is free, local-first, and tested — every build command in this manual runs on your own computer with no accounts required.</em></p>
+<div class="pager"><span></span><a href="01-phone-vs-flatbed.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

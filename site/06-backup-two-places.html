@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backup to Two Places &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html" class="active">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Backup to Two Places</h1>
+<p>A scan that exists on one disk does not exist. This chapter turns the professional <strong>3-2-1 rule</strong> into something a household can actually maintain — no cloud accounts required.</p>
+<h2>The 3-2-1 rule, plainly</h2>
+<ul><li><strong>3</strong> copies of everything</li><li><strong>2</strong> different types of storage (e.g., an internal drive and an external drive)</li><li><strong>1</strong> copy somewhere else entirely (a different building)</li></ul>
+<p>For this project the honest, minimal version is:</p>
+<blockquote><p><strong>Two full copies of <code>masters/</code>, in two devices, one of which lives outside your home.</strong></p></blockquote>
+<p>That&#x27;s the &quot;backup to two places&quot; this guide promises: your working drive, plus an external drive you keep updated, plus — for the irreplaceable masters — a copy at a relative&#x27;s house or in a safe deposit box.</p>
+<h2>Choosing drives</h2>
+<ul><li><strong>External portable drive (1–2 TB, USB):</strong> the workhorse. One is enough for a photo archive for years — 10,000 TIFFs at 600 dpi is roughly 25 GB; even generous collections stay under 100 GB.</li><li><strong>Second external drive or a desktop backup drive:</strong> the off-site copy. Cheap insurance.</li><li><strong>USB flash drives:</strong> acceptable for the off-site copy of a small archive, but they&#x27;re easy to lose and slower to verify. Prefer a real drive.</li><li><strong>Optical discs (DVD/BD):</strong> still valid and long-lived, but drives are disappearing from new computers. Only choose this if you already burn discs confidently.</li></ul>
+<p>Avoid: keeping the only second copy on the <em>same physical drive</em> (a second partition is not a second place), and unpowered &quot;cloud-adjacent&quot; gadgets that need accounts.</p>
+<h2>The backup routine</h2>
+<h3>After every scan session (5 minutes)</h3>
+<ol><li>Copy the new event folders from your working drive to <strong>external drive #1</strong>.</li><li>Eject properly, label the drive (&quot;photo archive — mirror&quot;), done.</li></ol>
+<h3>Monthly (10 minutes)</h3>
+<ol><li>Re-copy anything new since last month to drive #1.</li><li>Spot-check: open five random photos from drive #1 and confirm they display.</li></ol>
+<h3>Twice a year (30 minutes)</h3>
+<ol><li>Make or refresh the <strong>off-site copy</strong> on drive #2.</li><li>Take drive #2 to a relative&#x27;s house, office drawer, or safe deposit box. It should <em>live</em> there, not in the same bag as drive #1.</li><li>While you&#x27;re at it, verify drive #1 fully (below).</li></ol>
+<h2>Verification: a backup is only real if it opens</h2>
+<p>The single most common backup failure is a copy that was made but never tested. Twice a year:</p>
+<ol><li>Pick 10 files at random across different years.</li><li>Open each from the backup drive — image displays fully, file size matches the master.</li><li>Compare folder counts: the backup&#x27;s event-folder count equals the masters&#x27; count.</li></ol>
+<p>If you&#x27;re comfortable with a terminal, a checksum check is stronger. This project ships a helper for exactly that — see <code>tools/verify_backup.py</code> and the &quot;Bonus tool&quot; section of the README:</p>
+<pre><code>python3 tools/verify_backup.py /path/to/masters /path/to/backup-drive/family-photos</code></pre>
+<p>It walks both trees and reports any file that is missing, extra, or has changed. Exit status 0 means the backup is verified.</p>
+<h2>What about the cloud?</h2>
+<p>This guide is <strong>local-first</strong>: nothing here requires an account, a subscription, or an internet connection. Cloud backup is a legitimate <em>extra</em> layer if you already trust a provider — but it is not required for a safe archive, and it is not a substitute for the off-site drive. The two-place rule above stands on its own.</p>
+<h2>Ransomware, accidents, and versioning</h2>
+<p>One refinement worth ten minutes: keep the off-site copy <strong>disconnected</strong> except during updates. A drive that&#x27;s only plugged in twice a year is immune to anything that happens to your computer in between — malware, accidental mass deletion, a bad software update. Rotation <em>is</em> the versioning.</p>
+<h2>The inheritance test</h2>
+<p>Your backup plan should be explainable in two sentences to the person who&#x27;d deal with it if you couldn&#x27;t:</p>
+<blockquote><p>&quot;The family photos are in the <code>family-photos</code> folder on my computer. The dark gray drive in the safe box has the second copy — just copy the whole folder.&quot;</p></blockquote>
+<p>If you can&#x27;t say that yet, write it into the root <code>README.txt</code> from chapter 5 and tell one person where the drive is.</p>
+<h2>Next</h2>
+<p>With the archive safe, it&#x27;s time to share it — <a href="07-sharing-with-relatives.html">chapter 7</a>.</p>
+<div class="pager"><a href="05-folder-trees.html">&larr; Previous</a><a href="07-sharing-with-relatives.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

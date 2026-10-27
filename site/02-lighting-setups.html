@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lighting Setups &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html" class="active">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Lighting Setups</h1>
+<p>Good lighting is the difference between a phone capture that looks like a scan and one that looks like a snapshot of a snapshot. This chapter gives you three setups, from free to twenty dollars, that produce even, glare-free light.</p>
+<h2>The problem lighting solves</h2>
+<p>A photo print has a slightly glossy surface. Point any light straight at it and you get a <strong>hot spot</strong> — a white glare blob that erases part of the image forever. The fix is always the same principle: <strong>light the photo from the sides, at an angle, with light that is even across the whole surface.</strong></p>
+<h2>Setup 1: Window daylight (free)</h2>
+<p>The cheapest setup is also one of the best.</p>
+<ol><li>Pick a bright overcast day (direct sun creates hard shadows and shifts color).</li><li>Find a window with indirect light.</li><li>Lay a white or light-gray sheet on the floor or table near the window.</li><li>Place photos on the sheet.</li><li>Stand <strong>directly over</strong> the photo and shoot straight down.</li></ol>
+<p>Why it works: a large window is a huge, diffuse light source — the same idea as a professional softbox. Light arrives from a broad angle, so no single direction produces glare.</p>
+<p>Watch for: your own shadow. Shift position until it falls away from the photo.</p>
+<h2>Setup 2: Two lamps at 45° (near free)</h2>
+<p>For evening work or windowless rooms:</p>
+<ol><li>Two identical lamps (daylight-white bulbs, 4000–5000 K, if you can choose).</li><li>Place them left and right of the photo, each about <strong>45 degrees</strong> from the photo&#x27;s surface and 30–45 cm (12–18 in) away.</li><li>The photo sits on a matte white or neutral gray surface.</li></ol>
+<p>Why it works: light from two opposing 45° angles cancels glare — the reflection from one lamp lands where the other&#x27;s doesn&#x27;t. This is the classic copy-stand lighting arrangement, unchanged for 70 years.</p>
+<p>Watch for: mismatched bulbs. Two different color temperatures will tint half your photo warm and half cool. Use identical bulbs.</p>
+<h2>Setup 3: The folding jig (about $15–25)</h2>
+<p>For sessions over an hour, build a repeatable jig:</p>
+<ul><li>A <strong>foldable LED photography light panel</strong> or two cheap LED panels on small stands.</li><li>A phone tripod or overhead mount pointed straight down.</li><li>A matte white board as the work surface.</li></ul>
+<p>The payoff is <strong>consistency</strong>: once set, every capture uses identical light, distance, and angle. Batch after batch looks the same, which makes chapter 4&#x27;s file naming and any later editing far easier.</p>
+<h2>Rules that apply to every setup</h2>
+<ol><li><strong>Turn off the flash.</strong> Always. A flash from a phone is the fastest way to create a glare blob.</li><li><strong>Turn off other room lights</strong> that mix color temperatures with your main light.</li><li><strong>Wipe the photo and the lens.</strong> A microfiber cloth on both; dust reads as a scan defect.</li><li><strong>Lock exposure and focus</strong> on the photo itself (tap and hold on most phone cameras), so it doesn&#x27;t re-meter between shots.</li><li><strong>Check each capture at full zoom</strong> before moving the photo. Glare and blur are obvious at 100%; invisible on the phone&#x27;s small preview.</li><li><strong>Photograph in batches by size</strong> — all the 4×6s, then all the 3×5s — so your framing and distance stay constant.</li></ol>
+<h2>Lighting for film (slides and negatives)</h2>
+<p>Film is transparent: it must be <strong>backlit</strong>, not front-lit. Your options:</p>
+<ul><li><strong>Flatbed with transparency adapter</strong> — the default choice (see <a href="01-phone-vs-flatbed.html">chapter 1</a>).</li><li><strong>A small light pad</strong> (the kind used for tracing, $15–30) plus your phone on a tripod. Lay the negative strip or slides on the pad, shoot straight down with the room lights off. Keep the pad on its <strong>lowest brightness</strong> and expose so the sprocket holes/film edges look near-white, not blazing.</li></ul>
+<p>Never backlight film with a phone screen or a bare lamp — uneven light and visible texture will ruin the capture.</p>
+<h2>Quick self-check</h2>
+<p>Before a long session, do one test capture of each photo type and check:</p>
+<ul><li>No glare anywhere on the image</li><li>All four corners in focus</li><li>The photo&#x27;s edges are parallel to the frame&#x27;s edges</li><li>Colors look neutral (a white area of the photo should read white, not orange or blue)</li></ul>
+<p>If all four pass, your lighting is done. Move on to <a href="03-resolution-honesty.html">chapter 3</a>.</p>
+<div class="pager"><a href="01-phone-vs-flatbed.html">&larr; Previous</a><a href="03-resolution-honesty.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

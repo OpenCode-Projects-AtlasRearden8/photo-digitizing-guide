@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html" class="active">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Glossary</h1>
+<p>Every term used in this guide, defined once, in plain English.</p>
+<p><strong>300 dpi / 600 dpi</strong> — Scan density settings. Dots (pixels) captured per inch of original. See <a href="03-resolution-honesty.html">chapter 3</a> for when each is honest.</p>
+<p><strong>3-2-1 rule</strong> — Keep 3 copies of important data, on 2 types of storage, with 1 copy off-site. Simplified for households in <a href="06-backup-two-places.html">chapter 6</a>.</p>
+<p><strong>35mm</strong> — The standard film format for consumer slides and negatives; each frame is about 24×36 mm.</p>
+<p><strong>Archive (verb)</strong> — To place files into the permanent, organized structure (<code>masters/</code>) where they are backed up and never edited.</p>
+<p><strong>Backlight</strong> — Light shining <em>through</em> film from behind. Film is transparent and must be backlit to be digitized; prints are front-lit.</p>
+<p><strong>Batch</strong> — A group of photos captured, named, and filed in one sitting. The unit of work in the worksheets.</p>
+<p><strong>Checksum</strong> — A digital fingerprint of a file. If two copies of a file have the same checksum, they are byte-for-byte identical — stronger proof than &quot;it opened.&quot;</p>
+<p><strong>Decade folder</strong> — The first level inside <code>masters/</code> (<code>1950s/</code>, <code>1960s/</code>…). Broad enough that filing is never ambiguous.</p>
+<p><strong>DPI (dots per inch)</strong> — Sampling density of a scan. Higher dpi = more pixels per inch of the original, up to the point where the original has no more detail to give.</p>
+<p><strong>Flatbed scanner</strong> — A scanner with a glass bed you lay photos on. Even lighting, no contact with the photo, and (with a transparency adapter) film capability.</p>
+<p><strong>Glare / hot spot</strong> — A white reflection blob on a photo caused by light hitting it straight on. Eliminated by side lighting at ~45°.</p>
+<p><strong>Interpolation</strong> — A scanner or software <em>inventing</em> pixels to reach a claimed resolution. The reason &quot;2400 dpi&quot; from a cheap device may contain no more real detail than 600.</p>
+<p><strong>JPEG</strong> — A compressed, lossy image format. Universal and small; used for sharing copies, never for masters.</p>
+<p><strong>Keystone distortion</strong> — The trapezoid shape a photo gets when photographed at a slight angle instead of straight-on.</p>
+<p><strong>Light pad</strong> — A thin, evenly lit panel (made for tracing) used to backlight film for phone capture.</p>
+<p><strong>Masters</strong> — The untouched, best-quality scan files in <code>masters/</code>. The single source of truth; every share and print derives from them.</p>
+<p><strong>Medium format film</strong> — Larger film (120 roll film, ~6 cm frames) from older cameras; holds more detail than 35mm and rewards higher scan resolution.</p>
+<p><strong>Metadata</strong> — Information <em>about</em> a photo (date, people, place). In this guide it lives in filenames and <code>notes.txt</code> files, so it needs no special software.</p>
+<p><strong>Negative</strong> — Film with tones reversed (dark looks light). Scanned and digitally inverted to a positive image.</p>
+<p><strong>Off-site copy</strong> — A backup stored in a different building than the originals. Survives fire, flood, and theft.</p>
+<p><strong>Photos per hour</strong> — The realistic throughput measure: ~150–200/hour careful phone capture of prints; ~20–40/hour flatbed.</p>
+<p><strong>Print service</strong> — A company (online or a store kiosk) that prints your digital files onto photo paper.</p>
+<p><strong>Resolution</strong> — How much detail an image contains, in pixels. Discussed honestly in <a href="03-resolution-honesty.html">chapter 3</a>.</p>
+<p><strong>Slide (transparency)</strong> — Film mounted in a small cardboard/plastic frame, viewed by light shining through. Backlit scanning required.</p>
+<p><strong>Sort order</strong> — The order files appear when listed alphabetically. Zero-padded names and ISO dates keep it equal to chronological order.</p>
+<p><strong>TIFF</strong> — An uncompressed, lossless image format. The correct format for master scans; large files.</p>
+<p><strong>Transparency adapter</strong> — A flatbed scanner&#x27;s built-in backlight in the lid, which allows scanning slides and negatives.</p>
+<p><strong>Verification</strong> — Actually opening files from a backup to prove the backup works. An unverified backup is a hope, not a backup.</p>
+<p><strong>Zero-padding</strong> — Writing sequence numbers as <code>001</code>, <code>002</code>… <code>010</code> so alphabetical sort matches numeric sort.</p>
+<div class="pager"><a href="09-scanner-worksheets.html">&larr; Previous</a><span></span></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

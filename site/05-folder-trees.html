@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folder Trees &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html" class="active">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Folder Trees</h1>
+<p>File names give you chronology; folder structure gives you geography. This chapter lays out a tree simple enough to explain to a relative and sturdy enough for 10,000 photos.</p>
+<h2>The recommended tree</h2>
+<pre><code>family-photos/
+├── masters/
+│   ├── 1950s/
+│   │   ├── 1957-00-00_house-warming/
+│   │   │   ├── 1957-00-00_house-warming_001.tif
+│   │   │   ├── 1957-00-00_house-warming_002.tif
+│   │   │   └── notes.txt
+│   │   └── 1959-06-00_ellen-graduation/
+│   ├── 1960s/
+│   │   └── 1962-06-15_wedding-ellen/
+│   ├── 1970s/
+│   ├── 1980s/
+│   └── film/
+│       ├── slides/
+│       │   └── 1971-08-00_smoky-mountains/
+│       └── negatives/
+│           └── 1980-07-00_camping-trip/
+├── shares/
+│   └── 2026-03_family-album-for-aunt-ruth/
+│       └── (JPEG copies for sharing)
+├── projects/
+│   └── 2026-12_gramma-keepsake-book/
+│       └── (working files for chapter 8)
+└── README.txt</code></pre>
+<h2>Why this shape</h2>
+<h3>Decade level: broad enough to never reorganize</h3>
+<p>Grouping by decade (<code>1950s</code>, <code>1960s</code>) means you never agonize over where <code>1962-06-15_wedding-ellen</code> goes — decades are unambiguous for any date that&#x27;s known even to the year. Event folders inside carry the precise date from chapter 4&#x27;s naming.</p>
+<p>Uncertain dates? Use the decade of your best estimate. A photo labeled <code>1974c</code> lives in <code>1970s/</code>. Approximate-but-consistent beats precise-but-scattered.</p>
+<h3>A <code>film/</code> branch for slides and negatives</h3>
+<p>Film originals are physically different objects (strips, mounts, sleeves) and were usually scanned in different sessions than prints. Giving them their own branch keeps scan batches and worksheets (chapter 9) clean. Their date/event folders use the same naming as prints.</p>
+<h3><code>masters/</code> is sacred</h3>
+<p>The <code>masters/</code> tree holds your <strong>best, untouched files</strong> — TIFFs from chapter 3, exactly as scanned. Nothing in <code>masters/</code> is ever edited, resized, renamed after filing, or deleted. Every other tree (<code>shares/</code>, <code>projects/</code>) contains <em>copies</em> made from masters.</p>
+<p>This one separation prevents the most common archive disaster: editing a shared JPEG, sending it around, and losing the original.</p>
+<h3><code>shares/</code> and <code>projects/</code> are disposable by design</h3>
+<p>Everything in them can be deleted and rebuilt from masters. When a sharing batch for a relative is done, you can even empty it — chapter 6&#x27;s backups stay focused on what&#x27;s irreplaceable.</p>
+<h2>The <code>notes.txt</code> habit</h2>
+<p>Each event folder gets a tiny <code>notes.txt</code>:</p>
+<pre><code>Event:   Smoky Mountains trip
+Date:    August 1971 (approx)
+People:  Gramma, Ellen, Dad (age ~12)
+Source:  3 slide mounts, Kodachrome; scanned on Epson V600, 600 dpi
+Notes:   The cabin photo is the one Mom always mentioned.</code></pre>
+<p>Five lines, written at the end of the scan session while memory is fresh. This is the cheapest archive technology that exists and one of the most valuable.</p>
+<h2>The root <code>README.txt</code></h2>
+<p>At the top of <code>family-photos/</code>, a short file explaining the scheme for whoever inherits it:</p>
+<pre><code>This folder is the family photo archive.
+- masters/  : original scans, never edit these
+- shares/   : copies made to send to relatives
+- projects/ : working files for books and prints
+Names are YYYY-MM-DD_event_NNN. Zeros mean &quot;unknown&quot;.
+Maintained by: (your name), last updated 2026.</code></pre>
+<h2>Rules</h2>
+<ol><li><strong>Never nest event folders inside other event folders.</strong> An event is one folder, however many photos it has.</li><li><strong>Never create a folder for fewer than ~5 photos</strong> unless the event genuinely demands it — merge strays into a <code>_misc-1970s</code> folder per decade.</li><li><strong>Never rename or reorganize masters after backup</strong> (chapter 6). Structure changes mean re-copying backups; do them together, deliberately.</li><li><strong>Folder count scales with events, not photos.</strong> 10,000 photos in 150 event folders is manageable; 10,000 folders is not.</li></ol>
+<h2>Next</h2>
+<p>The tree exists on one disk. <a href="06-backup-two-places.html">Chapter 6</a> makes sure it exists on at least two.</p>
+<div class="pager"><a href="04-file-naming.html">&larr; Previous</a><a href="06-backup-two-places.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

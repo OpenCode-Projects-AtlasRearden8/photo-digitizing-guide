@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phone vs. Flatbed: Choosing Your Capture Tool &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html" class="active">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Phone vs. Flatbed: Choosing Your Capture Tool</h1>
+<p>You have two realistic ways to digitize photos at home: <strong>the camera in your phone</strong> and a <strong>flatbed scanner</strong>. Both can produce archival-quality results. The right choice depends on what you&#x27;re digitizing, how much of it you have, and what you want to do with it.</p>
+<h2>The honest summary</h2>
+<table><thead><tr><th>Material</th><th>Best tool</th><th>Why</th></tr></thead><tbody><tr><td>Standard prints (3×5, 4×6, 5×7)</td><td>Phone <strong>or</strong> flatbed</td><td>Both are excellent; phone is faster</td></tr><tr><td>Large prints (8×10 and up)</td><td>Flatbed</td><td>Flat field, even light, no keystone distortion</td></tr><tr><td>Fragile or curled prints</td><td>Flatbed</td><td>No contact needed; nothing pinned or held</td></tr><tr><td>35mm slides</td><td>Flatbed (with film adapter) <strong>or</strong> dedicated film scanner</td><td>Tiny frames need real magnification</td></tr><tr><td>35mm negative strips</td><td>Flatbed (with film adapter)</td><td>Same as slides; film needs backlight</td></tr><tr><td>Medium/large format film (120, 4×5)</td><td>Phone over light pad, or flatbed</td><td>Flatbed beds are often too small</td></tr><tr><td>Photo albums (glued pages)</td><td>Phone</td><td>You cannot pull pages apart to lay them flat</td></tr></tbody></table>
+<h2>What the phone does well</h2>
+<p>Modern phone cameras (12 MP and up) resolve far more detail than a 4×6 print actually contains. For ordinary snapshots, a careful phone capture is <strong>visually indistinguishable</strong> from a flatbed scan at the same print size.</p>
+<p>Phone strengths:</p>
+<ul><li><strong>Speed.</strong> A practiced rhythm captures 150–200 prints per hour against a flatbed&#x27;s 20–40.</li><li><strong>Albums.</strong> You can photograph a page in place — no risk of tearing photos off backing pages.</li><li><strong>Cost.</strong> You already own it.</li><li><strong>Instant feedback.</strong> You see glare, blur, and cropping immediately.</li></ul>
+<p>Phone weaknesses:</p>
+<ul><li><strong>Glare</strong> is the constant enemy (solved in <a href="02-lighting-setups.html">chapter 2</a>).</li><li><strong>Keystone distortion</strong> — the photo is flat but your camera sees it at a slight angle. Fixable with a stand or a copy stand and careful setup.</li><li><strong>Consistency</strong> drifts over a long session; a jig solves this.</li></ul>
+<h2>What the flatbed does well</h2>
+<p>A flatbed scanner presses nothing against your photo and lights it with perfectly even, diffuse light.</p>
+<p>Flatbed strengths:</p>
+<ul><li><strong>Even illumination</strong> — no glare to fight, ever.</li><li><strong>Perfect geometry</strong> — the scan is exactly parallel to the photo.</li><li><strong>Film capability</strong> — the transparency adapter backlights slides and negatives, which a phone cannot do well without a separate light panel.</li><li><strong>Batch consistency</strong> — every scan in a session uses the same settings.</li></ul>
+<p>Flatbed weaknesses:</p>
+<ul><li><strong>Slow.</strong> 4 photos per 2–3 minutes at 600 dpi adds up across a shoebox.</li><li><strong>Film adapters vary wildly.</strong> Check reviews for your specific model before trusting slide scans.</li><li><strong>Desk space.</strong> It lives somewhere.</li></ul>
+<h2>The decision rule</h2>
+<ol><li><strong>Mostly standard prints, hundreds of them?</strong> Phone, with a proper lighting setup. Speed wins.</li><li><strong>Slides and negative strips, any quantity?</strong> Flatbed with a transparency adapter (or a cheap dedicated film scanner). This is the one place the flatbed is clearly right.</li><li><strong>Fragile, valuable, or oversized originals?</strong> Flatbed. Nothing touches the photo.</li><li><strong>Albums that can&#x27;t be disassembled?</strong> Phone. No alternative.</li><li><strong>Mixed collection, limited patience?</strong> Phone for prints, flatbed for film. Most people end up here.</li></ol>
+<h2>A note on &quot;dedicated&quot; photo scanners and all-in-one printers</h2>
+<p>All-in-one printer/scanners are flatbeds with modest optics — fine for documents, usually capped at 600 dpi with uneven film adapters. They work, but don&#x27;t buy one <em>for</em> photos. Dedicated &quot;photo scanners&quot; marketed at archivists are often just flatbeds with a higher price. If you&#x27;re buying hardware, a well-reviewed flatbed with a transparency unit is the sensible pick.</p>
+<h2>Next</h2>
+<p>Whichever tool you chose, <a href="02-lighting-setups.html">chapter 2</a> sets it up properly.</p>
+<div class="pager"><a href="00-start-here.html">&larr; Previous</a><a href="02-lighting-setups.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

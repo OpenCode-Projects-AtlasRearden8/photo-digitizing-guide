@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>File Naming: Years and Events &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html" class="active">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>File Naming: Years and Events</h1>
+<p>A file named <code>IMG_4821.jpg</code> is a mystery to whoever opens the folder after you — including future you. This chapter defines a naming scheme built on <strong>years and events</strong>: sortable, readable, and self-documenting.</p>
+<h2>The pattern</h2>
+<pre><code>YYYY-MM-DD_event_description_NNN</code></pre>
+<ul><li><code>YYYY-MM-DD</code> — the date the photo was <strong>taken</strong> (best) or the event&#x27;s approximate date.</li><li><code>event</code> — a short human label: <code>reunion</code>, <code>christmas</code>, <code>lake-trip</code>.</li><li><code>description</code> — optional, only when the event needs splitting.</li><li><code>NNN</code> — a zero-padded sequence number so files sort correctly.</li></ul>
+<h3>Examples</h3>
+<pre><code>1962-06-15_wedding-ellen-ceremony_001.tif
+1974-12-25_christmas-living-room_014.tif
+1987-07-00_family-reunion-lake_003.tif     ← month known, day unknown
+1990-00-00_vacation-florida_021.tif        ← year known only</code></pre>
+<h2>Handling unknown dates</h2>
+<p>Old photos rarely come labeled. Use zeros for unknown parts — <strong>never guess a specific day you don&#x27;t know</strong>:</p>
+<ul><li>Year known only: <code>1974-00-00_christmas_001</code></li><li>Year and month known: <code>1974-12-00_christmas_001</code></li><li>Year uncertain: use the best estimate and mark it: <code>1974c-00-00_christmas_001</code> (<code>c</code> = circa)</li></ul>
+<p>Zeros keep everything sortable, and &quot;1974-00-00&quot; honestly says <em>1974, sometime</em> instead of pretending to be June 3rd.</p>
+<h2>Why years-and-events works</h2>
+<ol><li><strong>Sorts chronologically for free.</strong> Alphabetical order <em>is</em> chronological order. Open the folder and the family story reads top to bottom.</li><li><strong>Answers the two questions anyone actually asks:</strong> <em>when was this?</em> and <em>what was happening?</em></li><li><strong>Survives being copied.</strong> The description travels inside the filename, so a file emailed to a cousin still explains itself years later.</li><li><strong>No database required.</strong> No app, no catalog, no cloud service holding the metadata hostage.</li></ol>
+<h2>Rules that keep the scheme clean</h2>
+<ol><li><strong>Lowercase everything.</strong> <code>Christmas</code> and <code>christmas</code> will eventually both exist; prevent it.</li><li><strong>Hyphens between words, underscores between fields.</strong> <code>1974-12-25_christmas-morning_001</code> — the eye separates fields instantly.</li><li><strong>Never use spaces or special characters</strong> (<code>/ \ : * ? &quot; &lt; &gt; | # &amp; %</code>). They break on other operating systems and in web contexts.</li><li><strong>Zero-pad sequence numbers to 3 digits</strong> (<code>001</code>, not <code>1</code>), so 100 sorts after 099.</li><li><strong>Keep event names short and consistent.</strong> Pick <code>christmas</code>, not <code>xmas</code> one year and <code>dec-holiday</code> the next. Consistency beats cleverness.</li><li><strong>One event = one batch = one scan session</strong>, ideally. Chapter 9&#x27;s worksheet tracks this.</li></ol>
+<h2>What about people&#x27;s names?</h2>
+<p>Use them in the description field when the event is generic: <code>1987-07-00_reunion-gramma-and-ellen_004.tif</code>. But don&#x27;t overload filenames — if a photo&#x27;s story is long, that belongs in a <code>notes.txt</code> inside the event folder (chapter 5) or in the photo&#x27;s embedded metadata if your tools support it.</p>
+<h2>Renaming what your phone/scanner produced</h2>
+<p>Your camera or scanner will emit <code>IMG_4821.jpg</code> or <code>scan0002.tif</code>. Rename <strong>at the end of each batch</strong>, while the session is fresh in your mind — never &quot;later.&quot; A batch of 40 photos takes ten minutes to name at session&#x27;s end and an hour to archaeology a year later.</p>
+<p>Rename in place (your operating system&#x27;s bulk-rename or a small script) and check the sort order immediately: if <code>010</code> appears before <code>002</code>, your padding is wrong.</p>
+<h2>Next</h2>
+<p>Names need a home. <a href="05-folder-trees.html">Chapter 5</a> builds the folder tree they live in.</p>
+<div class="pager"><a href="03-resolution-honesty.html">&larr; Previous</a><a href="05-folder-trees.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printing a Keepsake &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html" class="active">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Printing a Keepsake</h1>
+<p>Digitizing is rescue; a keepsake is the reward. This chapter covers turning selected scans back into physical objects — a photo book, framed prints, or a small album — using the archive you built in chapters 1–7.</p>
+<h2>Start from masters, decide from shares</h2>
+<ol><li>Browse your <code>masters/</code> tree (or a fresh export of it) and shortlist 30–100 favorites. Don&#x27;t over-select: a book of 60 well-chosen photos gets looked at; 400 gets shelved.</li><li>Copy shortlisted files into a <code>projects/2026-XX_keepsake-book/</code> folder (chapter 5&#x27;s tree).</li><li>From there, work only on copies. Masters stay untouched.</li></ol>
+<h2>Resolution honesty for printing (chapter 3, applied)</h2>
+<p>The rule from chapter 3 runs in reverse for printing:</p>
+<ul><li>A print needs roughly <strong>300 pixels per inch</strong> at the printed size.</li><li>Your 4×6 print scanned at 300 dpi (1800 × 1200 px) prints beautifully at 4×6 and acceptably at 5×7.</li><li>The same file stretched to 8×10 will look soft. Don&#x27;t do it — choose a different photo or a smaller print size.</li><li>A 35mm slide scanned at 600 dpi (~2100 × 3000 px) prints sharply at 8×10 — this is why film got the 600 dpi treatment.</li></ul>
+<p><strong>The quick check:</strong> divide the file&#x27;s pixel width by your target print width in inches. 300+ = sharp. 200–300 = acceptable at viewing distance. Below 200 = reconsider.</p>
+<table><thead><tr><th>File width</th><th>Sharp up to</th><th>Acceptable up to</th></tr></thead><tbody><tr><td>1200 px</td><td>4 in</td><td>6 in</td></tr><tr><td>1800 px</td><td>6 in</td><td>9 in</td></tr><tr><td>3000 px</td><td>10 in</td><td>15 in</td></tr><tr><td>4200 px</td><td>14 in</td><td>21 in</td></tr></tbody></table>
+<h2>Keepsake options, cheapest first</h2>
+<h3>1. Loose prints from a print service ($0.10–0.40 each)</h3>
+<p>Upload JPEGs from <code>projects/</code> to a photo-print service (or use a local drugstore/grocery kiosk) and receive standard prints. Perfect for: handing sets to relatives, a &quot;brag book&quot; for an elder, test prints before committing to a book.</p>
+<p><strong>Order one test print first.</strong> Check color and sharpness in person before ordering 60.</p>
+<h3>2. A simple photo album and printed photos ($20–40)</h3>
+<p>Classic slip-in albums are underrated: no software, no design decisions, done in an evening. Sort prints chronologically — your years-and-events filenames (chapter 4) make this trivial — and write dates and names on the memo lines.</p>
+<h3>3. A printed photo book ($30–80)</h3>
+<p>Book services let you lay out pages in the browser. Honest advice:</p>
+<ul><li>Keep layouts simple: one photo per page for favorites, clean white backgrounds.</li><li>Put the story in captions — pull from your <code>notes.txt</code> files. &quot;Ellen and Gramma, reunion, July 1987&quot; is worth more than any design flourish.</li><li>8×10&quot; or 10×10&quot; books show old photos well; pocket-sized books get handled more.</li><li>Order one copy first, proof it in person, then order copies for relatives.</li></ul>
+<h3>4. Framed prints ($10–30 each)</h3>
+<p>One great scan, matted and framed, beats ten gadgets. Print at the sharpness-checked size, use a mat so the print doesn&#x27;t touch the glass, and keep it out of direct sunlight — the same light that glare-fought you in chapter 2 will fade the print.</p>
+<h2>Paper and finish, briefly</h2>
+<ul><li><strong>Luster or satin finish</strong> handles fingerprints and glare better than glossy; matte flatters old, soft photos.</li><li>For anything you want to last generations, look for &quot;archival&quot; or &quot;acid-free&quot; paper claims on the print service — and remember your masters are the real long-term preservation; any print is a view of them.</li></ul>
+<h2>Captions and dates</h2>
+<p>A keepsake without names is a mystery for the next generation. Before finalizing any book or album:</p>
+<ul><li>Fill in dates from filenames (zeros in a date mean &quot;unknown&quot; — write &quot;1974, spring&quot; or just &quot;1974&quot;).</li><li>Confirm names with an elder relative <em>before</em> printing. Chapter 7&#x27;s correction rule applies double here: a printed book cements errors.</li><li>Include a title page or first page: &quot;The Asdale Family Photos, 1950–1990, collected 2026.&quot; Future-you&#x27;s descendants will thank you.</li></ul>
+<h2>The loop closes</h2>
+<p>Print → gift → relatives correct your dates → you fix <code>notes.txt</code> and filenames → the archive improves. That loop — digital informing paper, paper informing digital — is the whole point of the project.</p>
+<h2>Next</h2>
+<p><a href="09-scanner-worksheets.html">Chapter 9</a>: the printable worksheets that keep your scan sessions organized.</p>
+<div class="pager"><a href="07-sharing-with-relatives.html">&larr; Previous</a><a href="09-scanner-worksheets.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

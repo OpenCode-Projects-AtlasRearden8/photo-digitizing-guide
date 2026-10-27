@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scanner Worksheets &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html" class="active">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Scanner Worksheets</h1>
+<p>Print these pages (or copy them into a notebook) and keep them next to the scanner. They turn a sprawling &quot;digitize everything someday&quot; project into repeatable, finishable sessions.</p>
+<hr>
+<h2>Worksheet A: Collection Inventory</h2>
+<p>Fill one per box, album, or envelope <em>before</em> scanning anything.</p>
+<pre><code>Collection name: ________________________________
+Storage location found: __________________________
+Type (circle all): prints / slides / negatives / album pages
+Approximate count: ______
+Date range (best guess): ________ to ________
+Condition notes (mold? tears? stuck together?):
+________________________________________________
+________________________________________________
+Fragile items needing flatbed only (count): ______
+Priority (1 = do first): ______
+Date logged: ____________</code></pre>
+<p><strong>Why:</strong> you cannot plan sessions or estimate time without knowing what&#x27;s in each box. Inventory first also means that if the project stalls for a year, you still know what you have.</p>
+<hr>
+<h2>Worksheet B: Session Plan</h2>
+<p>Fill one per scan session. A session is 1–3 hours, one event or one box.</p>
+<pre><code>Session date: ____________
+Target collection (from Worksheet A): ____________________
+Tool today (circle): phone / flatbed / light pad
+Lighting setup (circle): window / two lamps / LED jig
+Resolution (circle): 300 dpi / 600 dpi        (see ch. 3)
+File format (circle): TIFF masters / JPEG only
+Naming batch prefix: YYYY-MM-DD_event  → ____________________
+Starting sequence number: ______
+Time budget: ______ hours</code></pre>
+<p><strong>Why:</strong> decisions made <em>before</em> the first capture (tool, light, dpi, naming) are consistent; decisions made photo-by-photo are chaos.</p>
+<hr>
+<h2>Worksheet C: Batch Log</h2>
+<p>One line per batch of photos within a session.</p>
+<pre><code>Batch # | What&#x27;s in it            | Count | Done | Glare check | Named
+--------|-------------------------|-------|------|-------------|------
+  1     | 4x6 prints, reunion box |  38   | [ ]  |    [ ]      | [ ]
+  2     | 3x5 prints, same box    |  22   | [ ]  |    [ ]      | [ ]
+  3     |                         |       | [ ]  |    [ ]      | [ ]
+  4     |                         |       | [ ]  |    [ ]      | [ ]</code></pre>
+<p>Check &quot;Glare check&quot; only after zooming to 100% on a few samples (chapter 2&#x27;s self-check). Check &quot;Named&quot; only after the batch is renamed per chapter 4 — same session, never &quot;later.&quot;</p>
+<p><strong>Why:</strong> the log is what lets you stop mid-project without losing your place.</p>
+<hr>
+<h2>Worksheet D: Session Close-out</h2>
+<p>The last five minutes of every session. Do not skip.</p>
+<pre><code>[ ] All captures renamed (years-and-events, zero-padded)
+[ ] Event folder created in masters/ tree, notes.txt written
+[ ] Files copied to external drive #1
+[ ] Batch log completed
+[ ] Next session&#x27;s target written here: ____________________
+[ ] Anything damaged during handling? Note it: _____________</code></pre>
+<p><strong>Why:</strong> the close-out <em>is</em> the backup habit. A session that ends without the copy step is a session that can be lost.</p>
+<hr>
+<h2>Worksheet E: Verification Record</h2>
+<p>Twice a year, per chapter 6.</p>
+<pre><code>Date: ____________
+Drive checked: ____________
+Random files opened OK: 10 / 10?  [ ]
+Folder count matches masters: [ ]
+Off-site copy refreshed this visit: [ ]
+Off-site drive returned to: ____________________
+Next verification due: ____________</code></pre>
+<hr>
+<h2>Printing these worksheets</h2>
+<p>This page is plain Markdown — print it from any viewer, or use the built site&#x27;s print-friendly layout (every page prints cleanly; worksheets render as monospace blocks that hold their alignment on paper).</p>
+<p>A pre-filled example of Worksheet B for a typical first session:</p>
+<pre><code>Session date: 2026-11-08
+Target collection: Grandma&#x27;s shoebox #1 (inventory #1)
+Tool today: phone
+Lighting setup: window
+Resolution: 300 dpi
+File format: TIFF masters
+Naming batch prefix: → 1974-12-00_christmas
+Starting sequence number: 001
+Time budget: 2 hours</code></pre>
+<p>That&#x27;s a complete, realistic Saturday morning: 40–80 prints captured, named, filed, and backed up before lunch.</p>
+<div class="pager"><a href="08-printing-a-keepsake.html">&larr; Previous</a><a href="10-glossary.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharing with Relatives &middot; Photo Digitizing Guide</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #5b6472;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --accent: #7a4a1f;
+  --accent-soft: #f3e7d8;
+  --line: #e4ded2;
+  --code-bg: #f1efe8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+header.site {
+  background: var(--accent);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+header.site h1 { margin: 0; font-size: 1.4rem; font-family: Georgia, serif; }
+header.site p { margin: 0.2rem 0 0; font-size: 0.95rem; opacity: 0.9; }
+header.site a { color: #fff; text-decoration: none; }
+.layout { display: flex; flex-wrap: wrap; max-width: 70rem; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 16rem;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { margin: 0.35rem 0; }
+nav.toc a { color: var(--accent); text-decoration: none; display: block; padding: 0.25rem 0.5rem; border-radius: 4px; }
+nav.toc a:hover { background: var(--accent-soft); }
+nav.toc a.active { background: var(--accent-soft); font-weight: bold; }
+main { flex: 1 1 30rem; padding: 1.5rem 2rem 3rem; max-width: 46rem; }
+main h1 { font-size: 1.9rem; margin-top: 0; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.4rem; }
+main h2 { font-size: 1.35rem; margin-top: 2rem; }
+main a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 0.9em; background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+blockquote {
+  margin: 1rem 0; padding: 0.6rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  font-style: italic;
+}
+.pager { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.pager a { color: var(--accent); text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+footer.site { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 1.5rem; border-top: 1px solid var(--line); }
+@media (max-width: 50rem) {
+  nav.toc { flex: 1 1 100%; border-right: none; border-bottom: 1px solid var(--line); }
+}
+@media print {
+  header.site, nav.toc, .pager, footer.site { display: none; }
+  main { max-width: none; padding: 0; }
+  pre { white-space: pre-wrap; border: 1px solid #ccc; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+<h1><a href="index.html">Photo Digitizing Guide</a></h1>
+<p>Rescue printed photos, slides, and film into a safe digital archive</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="Chapters">
+<ol>
+<li><a href="00-start-here.html">Start Here</a></li>
+<li><a href="01-phone-vs-flatbed.html">Phone vs. Flatbed: Choosing Your Capture Tool</a></li>
+<li><a href="02-lighting-setups.html">Lighting Setups</a></li>
+<li><a href="03-resolution-honesty.html">Resolution Honesty: 600 dpi vs. 300 dpi</a></li>
+<li><a href="04-file-naming.html">File Naming: Years and Events</a></li>
+<li><a href="05-folder-trees.html">Folder Trees</a></li>
+<li><a href="06-backup-two-places.html">Backup to Two Places</a></li>
+<li><a href="07-sharing-with-relatives.html" class="active">Sharing with Relatives</a></li>
+<li><a href="08-printing-a-keepsake.html">Printing a Keepsake</a></li>
+<li><a href="09-scanner-worksheets.html">Scanner Worksheets</a></li>
+<li><a href="10-glossary.html">Glossary</a></li>
+</ol>
+</nav>
+<main>
+<h1>Sharing with Relatives</h1>
+<p>An archive that only you can see is half-finished. This chapter covers getting copies to siblings, cousins, and elders — with and without the cloud — plus the etiquette that keeps it pleasant.</p>
+<h2>First: share copies, never masters</h2>
+<p>Chapter 5 built a <code>shares/</code> tree for exactly this. The routine:</p>
+<ol><li>Copy the relevant photos from <code>masters/</code> into a new folder under <code>shares/</code>.</li><li>Convert or export them as <strong>JPEG, quality 85–90</strong> (chapter 3&#x27;s format rule).</li><li>Optionally resize to a long edge of 3000–4000 px — plenty for viewing and ordinary prints, a quarter of the file size of a 600 dpi TIFF.</li><li>Name the folder for the recipient and occasion: <code>2026-03_family-album-for-aunt-ruth/</code>.</li></ol>
+<p>Everything in <code>shares/</code> is disposable — delete it when the sharing is done and rebuild it any time from masters.</p>
+<h2>Sharing without any cloud account</h2>
+<h3>USB drive by hand (the classic)</h3>
+<p>Copy the <code>shares/</code> folder to a $10 flash drive and hand it over at the next visit. Include a plain-text <code>READ-ME-FIRST.txt</code>:</p>
+<pre><code>These are scans of the family photos, Christmas set 1974-1990.
+To view: double-click any file.
+To keep: copy the whole folder to your computer.
+From: (your name), March 2026.</code></pre>
+<p>This works for every relative regardless of technical comfort, and it&#x27;s how the off-site backup drive (chapter 6) can double as a delivery — drop off copies <em>and</em> store the drive in one trip.</p>
+<h3>Direct file transfer between phones/computers</h3>
+<ul><li><strong>Nearby sharing built into the OS</strong> (AirDrop, Quick Share, Nearby Share): instant for a handful of photos at a family gathering.</li><li><strong>A USB cable between phone and computer:</strong> still the most reliable transfer that exists.</li><li><strong>A home network folder:</strong> if your household already has one, it&#x27;s private and free. If you don&#x27;t, don&#x27;t build one just for this.</li></ul>
+<h3>Email and chat apps, honestly</h3>
+<p>Fine for 5–10 photos, painful beyond that: attachments compress, chat apps compress harder, and a 40-photo email thread is nobody&#x27;s archive. Use them for previews (&quot;look what I found&quot;), then deliver the real set on a drive.</p>
+<h2>Sharing with a cloud service — the honest caveats</h2>
+<p>Shared-album features (photo-platform links, file-locker folders) are convenient for far-away relatives and there&#x27;s no need to moralize about them. Know the trade-offs and decide:</p>
+<ul><li>Someone else&#x27;s terms of service sit between your family and the photos.</li><li>Links expire; accounts get abandoned; free tiers compress or quota.</li><li>The archive still lives in your two backed-up places — <strong>the cloud copy is a convenience, never a pillar.</strong></li></ul>
+<p>If you use one, upload from <code>shares/</code>, never from <code>masters/</code>.</p>
+<h2>Etiquette that matters in family photo projects</h2>
+<ol><li><strong>Ask before publishing.</strong> Sharing with the family and posting publicly are different acts. Faces of children, in particular: ask the parents.</li><li><strong>Name people with their permission.</strong> Some relatives do not want their name attached to a searchable filename.</li><li><strong>Give elders the prints.</strong> A 90-year-old aunt may not want a zip file. Chapter 8&#x27;s keepsake prints are the better gift — often the most appreciated outcome of the whole project.</li><li><strong>Accept corrections gracefully.</strong> &quot;That&#x27;s not 1974, that&#x27;s 1972 — and that&#x27;s Carol, not Karen.&quot; Every correction is free metadata. Write it into the event&#x27;s <code>notes.txt</code> immediately.</li><li><strong>Set expectations for scope.</strong> &quot;I&#x27;m doing the 1960s this spring&quot; prevents the whole family assigning you the entire attic.</li></ol>
+<h2>A simple release rhythm</h2>
+<p>Families sustain projects better than individuals do:</p>
+<ul><li><strong>After each decade:</strong> send a short note (&quot;1960s folder is done — 214 photos, drive coming your way&quot;).</li><li><strong>Once a year:</strong> refresh the off-site drive (chapter 6) and hand a relative the newest complete copy. Your backup and your sharing now reinforce each other.</li></ul>
+<h2>Next</h2>
+<p>The archive is safe and shared. Last build step: <a href="08-printing-a-keepsake.html">chapter 8</a>, turning it back into paper.</p>
+<div class="pager"><a href="06-backup-two-places.html">&larr; Previous</a><a href="08-printing-a-keepsake.html">Next &rarr;</a></div>
+</main>
+</div>
+<footer class="site">
+<p>Photo Digitizing Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT licensed &middot; local-first, no accounts required</p>
+</footer>
+</body>
+</html>
